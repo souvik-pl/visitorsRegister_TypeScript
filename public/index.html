@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitor's Register</title>
+  <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+
+	<h1>Visitor's Register</h1>
+
+
+	<div class="form-element">
+		<form class="input-form">
+			<div class="field">
+				<label>Check in/Check out</label>
+				<select id="type">
+					<option value="CheckIn">Check In</option>
+					<option value="CheckOut">Check Out</option>
+				</select>
+			</div>
+      
+			<div class="field">
+				<label>Name:</label>
+				<input type="text" id="name" required>
+			</div> 
+			
+			<div class="field">
+				<label>Coming From:</label>
+				<input type="text" id="from" required>
+			</div>   
+      
+			<div class="field">
+				<label>Purpose:</label>
+				<input type="text" id="purpose" required>
+			</div>
+		
+			<div class="field">
+				<label>Date:</label>
+				<input type="date" id="date" required>
+			</div>
+      
+			<button>Add</button>
+		</form>
+
+	</div>
+  
+	<div class='output'>
+		<ol class="visitor-entries">
+      
+		</ol>
+	</div>
+	
+	<script src='script.js'></script>
+</body>
+</html>
